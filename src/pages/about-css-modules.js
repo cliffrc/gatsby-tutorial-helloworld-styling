@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import * as styles from "./about-css-modules.module.css"
 import Container from "../components/container"
 
@@ -17,6 +18,10 @@ const User = props => (
 export default function About() {
   return (
     <Container>
+      <p>
+        <Link to="/">Home</Link>
+      </p>
+
       <h1>About CSS Modules</h1>
       <p>CSS Modules are cool! And that is why I am obsessed with them!</p>
       <User
